@@ -45,7 +45,7 @@ public abstract class EntityUtils {
         throws ObjectRetrievalFailureException {
         for (T entity : entities) {
             if (entity.getId() == entityId && entityClass.isInstance(entity)) {
-                return entit;
+                return entity;
             }
         }
         throw new ObjectRetrievalFailureException(entityClass, entityId);
